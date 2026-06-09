@@ -850,7 +850,7 @@ msgstr "Enable"
 
 #: C:\Users\You\PycharmProjects\TikTokDownloader\src\application\TikTokDownloader.py:112
 msgid "写入 Cookie (抖音)"
-msgstr "Extracting cookie (DouYin) from clipboard"
+msgstr "Write Cookie (DouYin)"
 
 #: C:\Users\You\PycharmProjects\TikTokDownloader\src\application\TikTokDownloader.py:113
 msgid "从浏览器读取 Cookie (抖音)"
@@ -858,7 +858,7 @@ msgstr "Extracting cookie (DouYin) from browser"
 
 #: C:\Users\You\PycharmProjects\TikTokDownloader\src\application\TikTokDownloader.py:115
 msgid "写入 Cookie (TikTok)"
-msgstr "Extracting cookie (TikTok) from clipboard"
+msgstr "Write Cookie (TikTok)"
 
 #: C:\Users\You\PycharmProjects\TikTokDownloader\src\application\TikTokDownloader.py:116
 msgid "从浏览器读取 Cookie (TikTok)"
