@@ -109,10 +109,10 @@ class TikTokDownloader:
             0: _("启用"),
         }
         self.__function_menu = (
-            (_("从剪贴板读取 Cookie (抖音)"), self.write_cookie),
+            (_("写入 Cookie (抖音)"), self.write_cookie),
             # (_("从浏览器读取 Cookie (抖音)"), self.browser_cookie),
             # (_("扫码登录获取 Cookie (抖音)"), self.auto_cookie),
-            (_("从剪贴板读取 Cookie (TikTok)"), self.write_cookie_tiktok),
+            (_("写入 Cookie (TikTok)"), self.write_cookie_tiktok),
             # (_("从浏览器读取 Cookie (TikTok)"), self.browser_cookie_tiktok),
             (_("终端交互模式"), self.complete),
             (_("后台监听模式"), self.monitor),
@@ -335,13 +335,14 @@ class TikTokDownloader:
             + "https://github.com/JoeanAmier/TikTokDownloader/blob/master/docs/Cookie%E8%8E%B7%E5%8F%96%E6"
             "%95%99%E7%A8%8B.md"
         )
-        if self.console.input(
+        user_input = self.console.input(
             _(
-                "复制 Cookie 内容至剪贴板后，按回车键确认继续；若输入任意内容并按回车，则取消操作："
+                "复制 Cookie 内容至剪贴板后，按回车键确认继续；或直接在此粘贴输入 Cookie 并按回车；若输入 Q/q 并按回车，则取消操作："
             )
-        ):
+        )
+        if user_input.lower() == "q":
             return
-        if self.cookie.run(tiktok):
+        if self.cookie.run(tiktok, user_input):
             await self.check_settings()
 
     # async def auto_cookie(self):

@@ -30,16 +30,18 @@ class Cookie:
     def run(
         self,
         tiktok=False,
+        text="",
     ) -> bool:
         """提取 Cookie 并写入配置文件"""
-        if self.validate_cookie_minimal(cookie := paste()):
+        cookie = text if text else paste()
+        if self.validate_cookie_minimal(cookie):
             self.extract(
                 cookie,
                 key=self.PLATFORM_KEY[tiktok],
                 platform=self.PLATFORM_NAME[tiktok],
             )
             return True
-        self.console.warning(_("当前剪贴板的内容不是有效的 Cookie 内容！"))
+        self.console.warning(_("当前提供的 Cookie 内容不是有效的 Cookie 内容！"))
         return False
 
     def extract(

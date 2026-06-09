@@ -818,7 +818,7 @@ msgid "启用"
 msgstr ""
 
 #: C:\Users\You\PycharmProjects\TikTokDownloader\src\application\TikTokDownloader.py:112
-msgid "从剪贴板读取 Cookie (抖音)"
+msgid "写入 Cookie (抖音)"
 msgstr ""
 
 #: C:\Users\You\PycharmProjects\TikTokDownloader\src\application\TikTokDownloader.py:113
@@ -826,7 +826,7 @@ msgid "从浏览器读取 Cookie (抖音)"
 msgstr ""
 
 #: C:\Users\You\PycharmProjects\TikTokDownloader\src\application\TikTokDownloader.py:115
-msgid "从剪贴板读取 Cookie (TikTok)"
+msgid "写入 Cookie (TikTok)"
 msgstr ""
 
 #: C:\Users\You\PycharmProjects\TikTokDownloader\src\application\TikTokDownloader.py:116
@@ -926,7 +926,7 @@ msgstr ""
 
 #: C:\Users\You\PycharmProjects\TikTokDownloader\src\application\TikTokDownloader.py:340
 msgid ""
-"复制 Cookie 内容至剪贴板后，按回车键确认继续；若输入任意内容并按回车，则取消"
+"复制 Cookie 内容至剪贴板后，按回车键确认继续；或直接在此粘贴输入 Cookie 并按回车；若输入 Q/q 并按回车，则取消"
 "操作："
 msgstr ""
 
@@ -1638,7 +1638,7 @@ msgid "keyword 参数无效"
 msgstr ""
 
 #: C:\Users\You\PycharmProjects\TikTokDownloader\src\module\cookie.py:42
-msgid "当前剪贴板的内容不是有效的 Cookie 内容！"
+msgid "当前提供的 Cookie 内容不是有效的 Cookie 内容！"
 msgstr ""
 
 #: C:\Users\You\PycharmProjects\TikTokDownloader\src\storage\sqlite.py:83
